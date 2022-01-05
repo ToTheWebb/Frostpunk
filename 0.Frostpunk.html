@@ -7,6 +7,21 @@
 </head>
 
 <body>
+  <input type="button" value="Night" onclick="
+  var target = document.querySelector('body');
+  if(this.value === 'Night')
+  {target.style.backgroundColor='black';
+  target.style.color='white';
+  this.value = 'Day';
+  document.querySelector('a').style.color='yellow';
+} else {
+  target.style.backgroundColor='white';
+  target.style.color='black';
+  this.value = 'Night';
+  document.querySelector('a').style.color='black';
+}
+  ">
+
   <h1><a href=index.html>FrostPunk</a></h1>
   <p>Frostpunk is the first society survival game. As the ruler of the last city on Earth, it is your duty to manage both its citizens and infrastructure.
     What decisions will you make to ensure your society's survival?
